@@ -44,7 +44,7 @@ class BackupsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/juice-backups.php', 'juice-backups'
+            __DIR__ . '/../config/lumen-backups.php', 'lumen-backups'
         );
     }
 }
