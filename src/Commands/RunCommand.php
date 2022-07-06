@@ -203,7 +203,8 @@ class RunCommand extends Command
 
         $path = tempnam(sys_get_temp_dir(), Str::random(6));
 
-        $key = sprintf('database.connections.%s', config('database.default'));
+        // $key = sprintf('database.connections.%s', config('database.default'));
+        $key = sprintf('database.connections.%s', 'pgsql');
 
         $db = config($key);
 
